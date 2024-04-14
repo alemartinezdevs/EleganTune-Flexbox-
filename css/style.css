@@ -1,0 +1,375 @@
+:root{
+    --negro: #000;
+    --blanco: #fff;
+    --rojo: #FF0000;
+}
+ html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+} 
+/* *,*:before, *, *:after{
+    box-sizing: inherit;
+}  */
+body{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    max-width: 155rem;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Creación del Header */
+
+
+.degradado{
+    color: transparent;
+    background: linear-gradient(to right, var(--negro) 20%, var(--rojo) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+@media (min-width: 768px) {
+  .header{
+      background-position: bottom center;
+  }
+}
+.nombre-sitio{
+    font-size: 2rem;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .nombre-sitio h1{
+        font-size: 5rem;
+        font-weight: bold;
+    }
+}
+@media (min-width: 768px) {
+    .contenido-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+  }
+}
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (min-width: 768px) {
+    .navegacion {
+        flex-direction: row;
+    }
+}
+.navegacion a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-weight: 700;
+    transition: background-color .3s;
+    border-radius: 2rem;
+    border: 1px solid var(--negro);
+    margin:1rem 1rem;
+    padding: .5rem 2rem;
+}
+@media (min-width: 768px) {
+    .navegacion a {
+        text-decoration: none;
+        color: var(--negro);
+        border: 1px solid var(--negro);
+        margin:0 1rem;
+        padding: .5rem 2rem;
+    }
+}
+.navegacion a:hover {
+    color: var(--rojo);
+    border-radius: 2rem;
+}
+.imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagen img{
+    width: 35%;
+    height: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+@media (min-width: 768px) {
+    .imagen img{
+        width: 30%;
+        margin-bottom: 8rem;
+    } 
+}
+.acerca-de{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.acerca-de h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+@media (min-width: 768px) {
+    .acerca-de h2{
+        color: var(--negro);
+        font-size: 4rem;
+        margin-bottom: 5rem;
+    }
+}
+.acerca-de p{
+    color: var(--negro);
+}
+@media (min-width: 768px) {
+    .acerca-de p{
+        color: var(--negro);
+        padding: 0 40rem;
+        font-weight: 500;
+    }
+}
+
+/* Como es EleganTune */
+.como-es-elegantune{
+    border-top: 1px solid #bebebe;
+    border-bottom: 1px solid #bebebe ;
+    margin-bottom: 3rem;
+    padding: 2rem;
+}
+@media (min-width: 768px) {
+  .como-es-elegantune{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 0;
+    align-items: center;
+  }
+}
+.contenido-elegantune{
+    padding:0 2rem;
+}
+.contenido-elegantune h2{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1.7rem;
+}
+.span{
+    color: var(--rojo);
+}
+.span2{
+    font-weight: bold;
+}
+.imagen-contenido-elegantune{
+    display: flex;
+    justify-content: center;
+}
+.imagen-contenido-elegantune img{
+    width: 90%;
+    height: auto;
+}
+
+/* Tarjeta */
+.card-header{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+@media (min-width: 768px) {
+  .card-header{
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  .card{
+    margin-top: 4rem;
+  }
+}
+.card-header span{
+    color: var(--rojo);
+}
+.card-title{
+    margin-top: 2rem;
+    font-size: 1.7rem;
+}
+@media (min-width: 768px) {
+  .card-title{
+    font-weight: 900;
+  }
+}
+.btn{
+    margin: 1.5rem;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    background-color: var(--blanco);
+    border: 1px solid var(--negro);
+    color: var(--negro);
+}
+@media (min-width: 768px) {
+  .btn{
+    font-size: 2rem;
+  }
+}
+.btn:hover{
+    background-color: var(--rojo);
+    border: 1px solid var(--rojo);
+    color: var(--blanco);
+}
+@media (min-width: 768px) {
+    .btn:hover{
+        color: var(--blanco);
+    }
+}
+.card-body{
+    background-image: url(../img/fondocard.jpg);
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .card-body{
+    background-position: bottom right;
+    background-repeat: no-repeat;
+  }
+}
+/* Main: Inicios de cards para los artistas */
+
+.titulo-2{
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .titulo-2 h1{
+        font-size: 5rem;
+        font-weight: bold;
+    }
+}
+.im-artista img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    background-position: top center;
+
+}
+
+@media (min-width: 768px) {
+    .im-artista {
+        height: 300px; 
+        background-position: top center;
+    }
+
+    .barra img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+    }
+}
+
+.contenido-artista {
+    margin: 3rem;
+    border: 1px solid #a1a1a1;
+    overflow: hidden; 
+}
+
+@media (min-width: 768px) {
+    .contenido-artista {
+        margin: 0;
+        border: none;
+    }
+
+    .contenido-principal {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6rem;
+    }
+
+    .artista {
+        border: 1px solid #a1a1a1;
+    }
+}
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 5rem;
+}
+@media (min-width: 768px) {
+  .barra{
+    margin: 1.5rem 10rem;
+  }
+}
+.barra img{
+    width: 15%;
+    height: 15%;
+}
+@media (min-width: 768px) {
+  .barra img{
+    width: 15%;
+    height: 20%;
+  }
+}
+.barra h3{
+    text-align: center;
+    background-color: var(--rojo);
+    color: var(--blanco);
+    padding: .5rem 2rem;
+    border-radius: 1rem;
+}
+.artista p{
+    text-align: center;
+    padding: 2rem;
+}
+.boton {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--negro);
+    border: 1px solid black;
+    padding: .5rem 2rem; 
+    margin: 0 4rem ;
+    margin-bottom: 2rem;
+    transition: background-color .3s;
+    font-weight: 700;
+    border-radius: 1rem;
+}
+.boton:hover{
+    border: 1px solid var(--negro);
+    color: var(--rojo);
+}
+
+.main{
+    margin-bottom: 5rem;
+}
+
+/* Terminando el footer */
+
+.paginas{
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .contenido-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.iconos{
+    display: flex;
+    justify-content: center;
+}
+@media (min-width: 768px) {
+  .iconos{
+    justify-content: space-evenly;
+  }
+}
+.fondo-icono:hover{
+    cursor: pointer;
+}
+.iconos img{
+    width: 3rem;
+    height: 3rem;
+    margin: .5rem;
+}
+.derechos {
+    text-align: center;
+    align-items: center;
+    background-color: var(--negro);
+    color: var(--blanco);
+    padding: 1rem;
+}
+
